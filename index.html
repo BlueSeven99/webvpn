@@ -12,53 +12,83 @@
     <link rel="stylesheet" href="css/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <!--ส่วน Accordion menu-->
+    <link rel="stylesheet" href="https://use.fontaewsome.com/releases/v5.7.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
 
 </head>
 
 <body>  
+   <!--ส่วน particle-->
+   <script src="./app.js"></script>
    <!-- Header -->
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
-        <div class="logo">
-          <a href="#cen"><img  src="img/logo.png" alt=""></a>
+        <div class="brand">
+          <a href="#cen"><img  src="img/logo_1.png" alt=""></a>
         </div>
         <div class="nav-list">
           <div class="hamburger"><div class="bar"></div></div>
-          <ul>
+          <ul class="">
             <li><a href="#cen" data-after="Home"><font face="Prompt">หน้าแรก</font> </a></li>
             <li><a href="#services" data-after="Service"><font face="Prompt">ทำไมต้องใช้ Crimson Boost?</font> </a></li>
             <li><a href="#projects" data-after="Projects"><font face="Prompt">บริการ</font> </a></li>
             <li><a href="#about" data-after="About"><font face="Prompt">ราคา</font> </a></li>
-            <li><a href="#about" data-after="About"><font face="Prompt">คำถาม?</font> </a></li>
+            <li><a href="#contact" data-after="contact"><font face="Prompt">คำถาม?</font> </a></li>
           </ul>
         </div>
       </div>
     </div>
+    
   </section>
   <!-- End Header -->
 
-   <section id="cen" class="sec">
-    <div class="container" >
-      <div class="row"> 
-        <div class="col-md-6 no-gutters">
-          <div class="leftside ">
-            <h1 ><font face="Notable" color="white"><br><br> Crimson Boost</font> </h1>
-            <h2><font face="Prompt" color="white">High Speed and High Security</font> </h2>
-            <h2><font face="Prompt" color="white">VPN ที่จะช่วยให้คุณได้ท่องไซเบอร์อย่างอิสระ
-              รวดเร็ว และปลอดภัย
-            </font></h2>
-            <a href="#projects" type="button" class="cta"><font face="Prompt">ลองใช้ Crimson Boost</font> </a>
-          </div>
-        </div>
-        <div class="col-md-6 no-gutters">
-          <div class="rightside d-flex justify-content-center align-item-center">
-            
-          </div>
+ <section id="cen" class="secc " >
+    <div class="container-c">
+    <div class="scene">
+      <div class="moon"></div>
+      <div class="container-f">
+      <div class="boxx ">
+        <div class="content">
+          <h1 ><font face="Notable" color="white"><br><br> Crimson Boost</font> </h1>
+          <h2><font face="Prompt" color="white">High Speed and High Security</font> </h2>
+          <h2><font face="Prompt" color="white">VPN ที่จะช่วยให้คุณได้ท่องไซเบอร์อย่างอิสระ
+            รวดเร็ว และปลอดภัย
+          </font></h2>
+          <a href="#projects" type="button" class="cta"><font face="Prompt">ลองใช้ Crimson Boost</font> </a></div>
         </div>
       </div>
+      <img src="img/cover_7.png" class="forest">
     </div>
+    <script type="text/javascript">
+      function star() {
+        let count = 500;
+        let scene = document.querySelector('.scene');
+        let i = 0;
+        while(i < count) {
+          let star = document.createElement("i");
+          let x = Math.floor(Math.random() * window.innerWidth);
+          let y = Math.floor(Math.random() * window.innerHeight);
+          let duration = Math.random() * 10;
+          let size = Math.random() * 2;
+
+          star.style.left = x+'px';
+          star.style.top = y+'px';
+          star.style.width = 1+size+'px';
+          star.style.height = 1+size+'px';
+
+          star.style.animationDuration = 5+duration+'s';
+          star.style.animationDelay = duration+'s';
+
+          scene.appendChild(star);
+          i++
+        }
+      }
+      star();
+    </script>
+  </div>
    </section>
 
   <!-- Service Section -->
@@ -66,7 +96,7 @@
     <div class="services container">
       <div class="service-top">
         <h1 class="section-title"><font color="white" face="Prompt">ทำไมต้องใช้ <span> Crimson Boost?</span> <br></font> </h1>
-        <p><font color="white" face="Prompt"><br> "หากคุณกำลังมองหา Vpn ระดับคุณภาพ Crimson Boost คือ Vpn ที่จะช่วยให้คุณเพลิดเพลินไปกับเว็บไซต์มากมาย
+        <p><font color="white" face="Prompt"><br> "Crimson Boost คือ Vpn ที่จะช่วยให้คุณเพลิดเพลินไปกับเว็บไซต์มากมาย
           ทั้งเว็บดูหนังหรือเล่นเกมออนไลน์ อยากซื้อของหรือดูซีรีย์แดนไกล Crimson Boost ก็สามารถพาคุณทะลุทุกข้อจำกัด ท่องได้ทุกเว็บไซต์แบบไม่ต้องห่วงเรื่องความปลอดภัย
         เรารักษาความปลอดภัยให้อย่างดี ปกปิดตัวตนเนียนกริบ อยากดูอะไร ทุกอย่างจะเป็นความลับ มาร่วมเป็นครอบครัว Crimson Boost กันเถอะ"  </font></p>
         </div>
@@ -113,50 +143,67 @@
 
   <section id="projects" class="sec site-section-sm" style="background-image: url(img/bg5.jpg); background-attachment: fixed;" >
     <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title"><font face="Prompt">บริการของเรา</font> </h1>
-        <p><font face="Prompt" >ดาวน์โหลด Criomson Boost</font> </p>
-        <p><font face="Prompt" >ซอฟต์แวร์ Crimson Boost ที่ใช้งานง่ายสำหรับทุกคน รองรับเดสก์ท็อป และมือถือเพียงติดตั้งแอป Crimson Boost</font> </p>
+      <div class="project-top">
+        <h1 class="section-title"><font color="white" face="Prompt">บริการของเรา</font> </h1>
       </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <img class="img-resize" src="./img/window.png" alt="img">
-            <h2><font face="Prompt"> Crimson Boost สำหรับ Windows</font> </h2>
+      <div class="container-cor">
+        <div class="boxx ">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <img class="img-resize " src="./img/window.png" alt="img">
+            <p><font face="Prompt"> Crimson Boost สำหรับ Windows</font> </p>
             <p><font face="Prompt">VPN ที่ดีที่สุดสำหรับ Windows &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font> </p>
             <a href="#projects" type="button" class="cta"><font face="Prompt">ดาวน์โหลด</font> </a>
           </div>
-            
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <img class="img-resize" src="./img/ios.png" alt="img">
-            <h2><font face="Prompt">Crimson Boost สำหรับ iOS</font> </h2>
-            <p><font face="Prompt">VPN ที่ดีที่สุดสำหรับ iOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font> </p>
+        <div class="boxx">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <img class="img-resize " src="./img/ios.png" alt="img">
+            <p><font face="Prompt">Crimson Boost สำหรับ iOS</font> </p>
+            <p><font face="Prompt"><br> VPN ที่ดีที่สุดสำหรับ iOS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font> </p>
             <a href="#projects" type="button" class="cta"><font face="Prompt">ดาวน์โหลด</font> </a>
-          </div>
+         </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <img class="img-resize" src="./img/android.png" alt="img">
-            <h2><font face="Prompt">Crimson Boost สำหรับ Android</font> </h2>
+        <div class="boxx">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
+            <img class="img-resize " src="./img/android.png" alt="img">
+            <p><font face="Prompt">Crimson Boost สำหรับ Android</font> </p>
             <p><font face="Prompt">VPN ที่ดีที่สุดสำหรับ Android &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font> </p>
             <a href="#projects" type="button" class="cta"><font face="Prompt">ดาวน์โหลด</font> </a>
           </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
+        <div class="boxx">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
             <img class="img-resize" src="./img/chrome.png" alt="img">
-            <h2><font face="Prompt">Crimson Boost สำหรับ Chrome</font> </h2>
+            <p><font face="Prompt">Crimson Boost สำหรับ Chrome</font> </p>
             <p><font face="Prompt">VPN ที่ดีที่สุดสำหรับ Chrome &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font> </p>
             <a href="#projects" type="button" class="cta"><font face="Prompt">ดาวน์โหลด</font> </a>
           </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
+        </div>  
+        <div class="boxx">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="content">
             <img class="img-resize" src="./img/mac.png" alt="img">
-            <h2><font face="Prompt">Crimson Boost สำหรับ Mac</font> </h2>
-            <p><font face="Prompt">VPN ที่ดีที่สุดสำหรับ Mac &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font> </p>
+            <p><font face="Prompt">Crimson Boost สำหรับ Mac</font> </p>
+            <p><font face="Prompt"><br> VPN ที่ดีที่สุดสำหรับ Mac &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font> </p>
             <a href="#projects" type="button" class="cta"><font face="Prompt">ดาวน์โหลด</font> </a>
           </div>
         </div>
@@ -173,50 +220,132 @@
         <p><font face="Prompt" color="white"></font> </p>
       </div>
       <div class="container-con">
-        <div class="box"> 
-          <h2><font face="Prompt">1 เดือน</font> </h2>
-          <img src="img/logo2.png" alt="t"><h3><font face="Prompt">150 บาท/30 วัน</font> </h3>
-          <p><font face="Prompt">สามารถเชื่อมต่อพร้อมกันได้ถึง 4 เครื่อง</font></p>
-          <p><font face="Prompt">บริการดูแลตลอดการใช้งาน</font></p>
-          <a href="#projects" type="button" class="cta"><font face="Prompt">ซื้อ</font> </a>
-        </div>
-        <div class="box"> 
-          <h2><font face="Prompt">3 เดือน</font> </h2>
-          <img src="img/logo2.png" alt="t"><h3><font face="Prompt">390 บาท/90 วัน</font> </h3>
-          <p><font face="Prompt">สามารถเชื่อมต่อพร้อมกันได้ถึง 4 เครื่อง</font></p>
-          <p><font face="Prompt">บริการดูแลตลอดการใช้งาน</font></p>
-          <a href="#projects" type="button" class="cta"><font face="Prompt">ซื้อ</font> </a>
-        </div>
-        <div class="box"> 
-          <h2><font face="Prompt">6 เดือน</font> </h2>
-          <img src="img/logo2.png" alt="t"><h3><font face="Prompt">790 บาท/180 วัน</font> </h3>
-          <p><font face="Prompt">สามารถเชื่อมต่อพร้อมกันได้ถึง 4 เครื่อง</font></p>
-          <p><font face="Prompt">บริการดูแลตลอดการใช้งาน</font></p>
-          <a href="#projects" type="button" class="cta"><font face="Prompt">ซื้อ</font> </a>
-        </div>
-        <div class="box"> 
-          <h2><font face="Prompt">1 ปี</font> </h2>
-          <img src="img/logo2.png" alt="t"><h3><font face="Prompt">1300 บาท/365 วัน</font> </h3>
-          <p><font face="Prompt">สามารถเชื่อมต่อพร้อมกันได้ถึง 4 เครื่อง</font></p>
-          <p><font face="Prompt">บริการดูแลตลอดการใช้งาน</font></p>
-          <a href="#projects" type="button" class="cta"><font face="Prompt">ซื้อ</font> </a>
+        <div class="pricing-table">
+          <div class="pricing-card">
+            <h3 class="pricing-card-header"><font face="Prompt">1 เดือน</font> </h3>
+             <div class="price"><font face="Prompt">170฿<span></span><sup><del>180฿</del></sup></font> </div>
+            <ul class="ul">
+              <li class="lii"><b><font face="Prompt">ถูกกว่าถึง 10% <br> </font> </b><font face="Prompt">*เฉลี่ยจ่ายวันละ 5 บาทเท่านั้น* </font></li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">เซิร์ฟเวอร์ VPN ประสิทธิภาพสูง</font> </li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">สนับสนุนเกมออนไลน์มากกว่า<br> 100 เกม</font> </li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">มี Server VPN มากกว่า 100 Server  ให้ต่อได้ไม่จำกัด</font> </li>
+             <!-- About <li class=""><font face="Prompt"><br>&nbsp;&nbsp;&nbsp; *เฉลี่ยจ่ายวันละ 5 บาทเท่านั้น* </font> </li>Section -->
+            </ul>
+            <a href="#" class="order-btn"><font face="Prompt">สั่งซื้อเลย</font> </a>
+          </div>
+      
+          <div class="pricing-cardpop">
+            <h3 class="pricing-cardpop-header"><font  face="Prompt">1 ปี</font> </h3>
+            
+            <div class="pop"><font face="Prompt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ยอดนิยม<img src="img/award.png" class="img-resizez img-pos"> </font></div>
+            <div class="prices"><font face="Prompt">1690฿<span></span><sup><del>2040฿</del></sup></font> </div>
+            
+            <ul class="ul">
+              <li class="liii"><b><font face="Prompt">คุ้มสุด 365 วัน ฟรีอีก 30 วัน</font></b><font face="Prompt"><br> *เฉลี่ยจ่ายเพียง 129 บาท/เดือน* </font> </li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">เซิร์ฟเวอร์ VPN ประสิทธิภาพสูง</font> </li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">สนับสนุนเกมออนไลน์มากกว่า <br>100 เกม</font> </li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">มี Server VPN มากกว่า 100 Server  ให้ต่อได้ไม่จำกัด</font> </li>
+             <!-- About<li class=""><font face="Prompt"><br>&nbsp;&nbsp; *เฉลี่ยจ่ายเพียง 129 บาท/เดือน* </font> </li> Section --> 
+            </ul>
+            <a href="#" class="order-btnpop"><font face="Prompt">สั่งซื้อเลย</font> </a>
+          </div>
+      
+          <div class="pricing-card">
+            <h3 class="pricing-card-header"><font face="Prompt">3 เดือน</font> </h3>
+            <div class="price"><font face="Prompt">450฿<span></span><sup><del>510฿</del></sup></font> </div>
+            <ul class="ul">
+              <li class="lii"><b><font face="Prompt">คุ้มๆ! 90 วัน ฟรีอีก 15 วัน</font> </b><font face="Prompt"><br> *เฉลี่ยจ่ายเพียง 130 บาท/เดือน* </font></li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">เซิร์ฟเวอร์ VPN ประสิทธิภาพสูง</font> </li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">สนับสนุนเกมออนไลน์มากกว่า <br>100 เกม</font> </li>
+              <li class=""><img src="img/true2.png" class="img-resizez"><font face="Prompt">มี Server VPN มากกว่า 100 Server  ให้ต่อได้ไม่จำกัด</font> </li>
+              <!-- About <li class=""><font face="Prompt"><br>&nbsp;&nbsp; *เฉลี่ยจ่ายเพียง 130 บาท/เดือน* </font> </li>Section -->
+            </ul>
+            <a href="#" class="order-btn"><font face="Prompt">สั่งซื้อเลย</font> </a>
+          </div>
         </div>
       </div>
      
   </section>
   <!-- End About Section -->
+  <script type="text/javascript">
+    $(function() {
+    var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    var links = this.el.find('.link');
+
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+
+      Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+      $next.slideToggle();
+      $this.parent().toggleClass('open');
+
+      if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+    }
+
+      var accordion = new Accordion($('#accordion'), false);
+    });
+  </script>
   <section id="contact" class="sec site-section-sm" style="background-image: url(img/bg5.jpg); background-attachment: fixed;">
     <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-    </div>
-    <div class="middle">
-      <div class="menuu"> 
-        <li class="itemm">
-          <a href="" class="btn">profile</a>
-          <div>
-            
-          </div>
-        </li>
+      <div><h1 class="section-title"><font face="Prompt" color="white">คำถามพบบ่อย</font> </h1></div>
+      <h3><font face="Prompt" color="white">ส่วนมากผู้คนถามเกี่ยวกับ <span>Crimson Boost</span> ว่ายังไงบ้างนะ</font> </h3>
+      <div class="container-col">
+        <ul id="accordion" class="accordion">
+          <li>
+            <div class="link"><img class="img-resizes" src="img/plus.png" alt=""><font face="Prompt">&nbsp; &nbsp; Crimson Boost ใช้ดีอย่างไร?</font> <i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#contact"><h3><font face="Prompt">&nbsp; &nbsp; Vpn ระดับคุณภาพ Crimson Boost คือ Vpn ที่จะช่วยให้คุณเพลิดเพลินไปกับเว็บไซต์มากมาย
+                ทั้งเว็บดูหนังหรือเล่นเกมออนไลน์ อยากซื้อของหรือดูซีรีย์แดนไกล Crimson Boost ก็สามารถพาคุณทะลุทุกข้อจำกัด ท่องได้ทุกเว็บไซต์แบบไม่ต้องห่วงเรื่องความปลอดภัย
+              เรารักษาความปลอดภัยให้อย่างดี ปกปิดตัวตนเนียนกริบ อยากดูอะไร ทุกอย่างจะเป็นความลับ  </font> </h3></a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link"><img class="img-resizes" src="img/plus.png" alt=""><font  face="Prompt">&nbsp; &nbsp; ฉันจะใช้ vpn Crimson Boost ได้อย่างไร? </font> <i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#contact"><h3><font face="Prompt">&nbsp; &nbsp; การใช้บริการ vpn ของ Crimson Boost นั้นมีขั้นตอนที่ง่ายมาก
+                เพียงคุณเปิดหน้าจอของโปรแกรมขึ้นมา You can use our Best Server Location feature to automatically find the best server for you, or choose from our list of torrent and streaming optimized servers.
+
+                For more details, head to our Help section. It’s where you’ll find step-by-step guides on how to configure our service and make the most out of your CyberGhost VPN subscription. </font></h3></a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link"><img class="img-resizes" src="img/plus.png" alt=""><font face="Prompt">&nbsp; &nbsp; Crimson Boost ปลอดภัยอย่างไร?</font><i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#contact"><h3><font face="Prompt">&nbsp; &nbsp; All our VPN apps keep you safe with the military-grade AES 256-bit encryption technique. We adhere only to the utmost privacy and security standards.
+
+                You do not need to be a cryptographer or a tech guru anymore to protect your digital life. Just hit the Connect button inside CyberGhost VPN, and you’re all set.</font></h3></a></li>
+
+            </ul>
+          </li>
+          <li>
+            <div class="link"><img class="img-resizes" src="img/plus.png" alt=""><font face="Prompt">&nbsp; &nbsp; Crimson Boost สามารถปกป้องอุปกรณ์ของคุณได้มากเท่าไหร่?</font><i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#contact"><h3><font face="Prompt">&nbsp; &nbsp;Because we want to help you protect your entire digital life, we’ve developed VPN apps for Windows, macOS, iOS, Android, Amazon Fire TV & Fire Stick, Android TV, Linux, and even routers.
+
+                And since we know you most likely have a lot of internet-connected gadgets, you can use one CyberGhost VPN subscription to protect up to seven devices at the same time.</font></h3></a></li>
+
+            </ul>
+          </li>
+          <li>
+            <div class="link"><img class="img-resizes" src="img/plus.png" alt=""><font face="Prompt">&nbsp; &nbsp;Crimson Boost เป็น Vpn ฟรีหรือไม่?</font><i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#contact"><h3><font face="Prompt">&nbsp; &nbsp;We have a free trial giving you access to all features, so go ahead and see if we’re the right VPN for you.
+
+                Protecting your privacy is at the core of what we do, so we’ve built a reliable VPN, able to withstand any threats. 
+                We charge for our service and use the funds to keep the company going and continue building the tools you need to safeguard your data.</font></h3></a></li>
+
+            </ul>
+          </li> 
+        </ul>
       </div>
     </div>
   </section>
@@ -224,26 +353,44 @@
   
   <section id="footer">
     <div class="footer container">
-      <div class="brand"><h1><span>S</span>haif <span>A</span>rfan</h1></div>
-      <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h2><font face="Prompt">ติดต่อเรา</font> </h2>
+          <h4 class="text-justify"><font face="Prompt"> Hazelnut Corperation </font></h4>
+          <h4 class="text-justify"><font face="Prompt">"บริษัทจัดทำ VPN สร้างความปลอดภัย อินเทอร์เน็ตรวดเร็ว รักษาความลับการท่องเว็บของคุณเป็นอย่างดี"</font></h4>
+          <h4 class="text-justify"><font face="Prompt">ตำบลในเมือง อำเภอเมือง จังหวัดขอนแก่น 40002</font></h4>
+          <h4 class="text-justify"><font face="Prompt">E-mail : hazelnutboos@gmail.th</font></h4>
+          <h4 class="text-justify"><font face="Prompt">โทรศัพท์ : 0650833333</font></h4>
         </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
         </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+          <hr>
         </div>
       </div>
-      <p>Copyright © 2020 Arfan. All rights reserved</p>
+     
     </div>
+      
+  </div>
   </section>
   <!-- End Footer -->
-  <script src="./app.js"></script>
+
 </body>
 </html> 
